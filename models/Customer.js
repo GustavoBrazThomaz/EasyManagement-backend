@@ -1,17 +1,9 @@
 const mongoose = require('mongoose')
 
-/*
-const CustomerSchema = new mongoose.Schema('Customer', {
-    name: {type: String, requried: true},
-    email: {type: String, requried: true},
-    price: {type: String, requried: true},
-    payment: {type: Boolean, requried: true}
-})
-*/
 const CustomerModel = mongoose.model('Customer', {
     name: {type: String, requried: true},
     email: {type: String, requried: true},
-    price: {type: String, requried: true},
+    price: {type: Number, requried: true},
     payment: {type: Boolean, requried: true}
 })
 
